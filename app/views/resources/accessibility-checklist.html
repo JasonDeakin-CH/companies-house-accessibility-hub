@@ -1,0 +1,101 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="govuk-grid-row govuk-body">
+    <div class="govuk-grid-column-three-thirds">
+      <h1 class="govuk-heading-xl">
+        Accessibility checklist
+      </h1>
+      <div class="flex-grid">
+        <div class="col">1. Write in plain language, using simple sentences.</div>
+        <div class="col govuk-heading-l govuk-!-margin-0">Do this.</div>
+      </div>
+      <div class="flex-grid">
+        <div class="col">2. Write descriptive links and headings.</div>
+        <div class="col govuk-link"><a href="#" class="govuk-link">Contact us</a></div>
+      </div>
+      <div class="flex-grid">
+        <div class="col">3. Organise content linearly, logically and consistently.</div>
+        <div class="col"></div>
+      </div>
+      <div class="flex-grid">
+        <div class="col">4. Break up content with sub-headings and lists (bulleted/numbered).</div>
+        <div class="col">
+          <div class="linear">
+            <div class="nav">
+              <p class="nav-text govuk-!-font-weight-bold govuk-!-font-size-14">GOV.UK</p>
+            </div>
+            <div class="body">
+              <h1 class="govuk-!-margin-0 govuk-!-margin-bottom-5">Heading</h1>
+              <p>Some text</p>
+              <h2 class="govuk-!-margin-0">Sub heading</h2>
+              <ul class="govuk-!-margin-0">
+                <li>Item one</li>
+                <li>Item two</li>
+                <li>Item three</li>
+              </ul>
+              <div>
+              <button class="govuk-button " data-module="govuk-button">
+                Continue
+              </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-grid">
+        <div class="col">5. Make important information stand out.</div>
+        <div class="col">
+          <div class="govuk-notification-banner govuk-!-margin-0" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+            <div class="govuk-notification-banner__header">
+              <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                Important
+              </h2>
+            </div>
+            <div class="govuk-notification-banner__content">
+              <p class="govuk-notification-banner__heading-sm">
+                You have 7 days left to send your application.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-grid">
+        <div class="col">6. Align text to the left and avoid all capitals.</div>
+        <div class="col"></div>
+      </div>
+      <div class="flex-grid">
+        <div class="col">7. Use good colour contrast and a readable font size and font type.</div>
+        <div class="col">
+          <div class="flex-item contrast">
+          <div class="govuk-heading-xl contrast-black govuk-!-padding-3 govuk-!-margin-0">
+            Aa
+          </div>
+          <div class="govuk-heading-xl contrast-white govuk-!-padding-3 govuk-!-margin-0">
+            Aa
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="flex-grid">
+        <div class="col">8. Use images (photos/diagrams) to support text - ensure alt text is included.</div>
+        <div class="col"><p> < alt > </p></div>
+      </div>
+      <div class="flex-grid">
+        <div class="col">9. Use multimedia (audio/video) to support - include captions and transcripts.</div>
+        <div class="col">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg enable-background="new 0 0 480 480" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" height="80">
+        <path d="m278.94 17.577c-5.568-2.656-12.128-1.952-16.928 1.92l-155.65 124.51h-74.368c-17.632 0-32 14.368-32 32v128c0 17.664 14.368 32 32 32h74.368l155.62 124.51c2.912 2.304 6.464 3.488 10.016 3.488 2.368 0 4.736-0.544 6.944-1.6 5.536-2.656 9.056-8.256 9.056-14.4v-416c0-6.144-3.52-11.744-9.056-14.432z"/>
+        <path d="m368.992 126.857c-6.304-6.208-16.416-6.112-22.624.128-6.208 6.304-6.144 16.416.128 22.656 24.192 23.872 37.504 55.968 37.504 90.368s-13.312 66.496-37.504 90.368c-6.272 6.176-6.336 16.32-.128 22.624 3.136 3.168 7.264 4.736 11.36 4.736 4.064 0 8.128-1.536 11.264-4.64 30.336-29.856 47.008-70.048 47.008-113.088s-16.672-83.232-47.008-113.152z"/>
+        <path d="m414.144 81.769c-6.304-6.24-16.416-6.176-22.656.096-6.208 6.272-6.144 16.416.096 22.624 36.384 36.064 56.416 84.192 56.416 135.52s-20.032 99.424-56.416 135.488c-6.24 6.24-6.304 16.384-.096 22.656 3.168 3.136 7.264 4.704 11.36 4.704 4.064 0 8.16-1.536 11.296-4.64 42.496-42.08 65.856-98.272 65.856-158.208s-23.36-116.128-65.856-158.24z"/>
+        </svg>
+        </div>
+      </div>
+      <div class="flex-grid">
+        <div class="col">10. Run the application's accessibility checker.</div>
+        <div class="col"></div>
+      </div>
+    </div>
+</div>
+{% endblock %}
