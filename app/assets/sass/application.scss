@@ -63,18 +63,52 @@ body {
   background-color: govuk-colour("light-grey");
 }
 
-.a11y-points {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly
-}
-
 .list {
   height: 10%;
   width: 100%;
   display: flex;
   align-items: center;
   padding: 10px;
+}
+
+.a11y-points {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  padding-left: 0px;
+}
+
+.a11y-point {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+ol {
+  list-style: none;
+  counter-reset: custom-counter;
+  li {
+    counter-increment: custom-counter;
+    margin: 0.25rem;
+  }
+  li::before {
+    content: counter(custom-counter);
+    background: black;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    line-height: 2rem;
+    color: white;
+    text-align: center;
+    margin-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.a11y-point:nth-child(odd) {
+  background-color: govuk-colour("light-grey");
 }
 
 .linear {
