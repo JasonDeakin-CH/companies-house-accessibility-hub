@@ -43,9 +43,6 @@ $govuk-assets-path: '/govuk/assets/';
 * {
   box-sizing: border-box;
 }
-body {
-  padding: 20px;
-}
 .flex-grid { 
   margin: 0 0 20px 0;
 }
@@ -131,18 +128,6 @@ ol {
     }
 }
 
-.contrast {
-  display: flex;
-  flex-direction: row
-}
-.contrast-black {
-  background: black;
-  color:  white;
-}
-.contrast-white {
-  background: white;
-  color: black;
-}
 .footer {
   background: #f3f2f1;
   height: 50px;
