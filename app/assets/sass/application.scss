@@ -16,52 +16,52 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 .flex-grid {
-    display: flex;
-  }
-  .flex-grid .col {
-    flex: 1;
-  }
+  display: flex;
+}
+.flex-grid .col {
+  flex: 1;
+}
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-grid-thirds .col {
+  width: 32%;
+}
+
+@media (max-width: 400px) {
+  .flex-grid,
   .flex-grid-thirds {
-    display: flex;
-    justify-content: space-between;
-  }
-  .flex-grid-thirds .col {
-    width: 32%;
-  }
-  
-  @media (max-width: 400px) {
-    .flex-grid,
-    .flex-grid-thirds {
-      display: block;
-      .col {
-        width: 100%;
-        margin: 0 0 10px 0;
-      }
+    display: block;
+    .col {
+      width: 100%;
+      margin: 0 0 10px 0;
     }
   }
+}
 
-  * {
-    box-sizing: border-box;
-  }
-  body {
-    padding: 20px;
-  }
-  .flex-grid { 
-    margin: 0 0 20px 0;
-  }
-  .col {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-  }
-  .col:nth-child(even) {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .list:nth-child(odd) {
-    background-color: govuk-colour("light-grey");
-  }
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 20px;
+}
+.flex-grid { 
+  margin: 0 0 20px 0;
+}
+.col {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.col:nth-child(even) {
+  display: flex;
+  justify-content: center;
+}
+
+.list:nth-child(odd) {
+  background-color: govuk-colour("light-grey");
+}
 
 .a11y-points {
   display: flex;
