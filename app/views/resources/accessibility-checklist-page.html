@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="govuk-grid-row govuk-body">
+    <div class="govuk-grid-column-three-thirds">
+      <h1 class="govuk-heading-xl">
+        Accessibility checklist
+      </h1>
+      <div class="flex-grid">
+        <div class="col a11y-points">
+            <div class="list">1. Write in plain language, using simple sentences.</div>
+            <div class="list">2. Write descriptive links and headings.</div>
+            <div class="list">3. Organise content linearly, logically and consistently.</div>
+            <div class="list">4. Break up content with sub-headings and lists (bulleted/numbered).</div>
+            <div class="list">5. Make important information stand out.</div>
+            <div class="list">6. Align content to the left and avoid all capitals.</div>
+            <div class="list">7. Use good colour contrast and a readable font size and font type.</div>
+            <div class="list">8. Use images (photos/diagrams) to support text - ensure alt text is included.</div>
+            <div class="list">9. Use multimedia (audio/video) to support - include captions and transcripts.</div>
+            <div class="list">10. Run the application's accessibility checker.</div>
+        </div>
+        <div class="col">
+          <div class="linear">
+            <div class="nav">
+              <p class="nav-text govuk-!-font-weight-bold">GOV.UK</p>
+            </div>
+            <div class="body">
+              <div class="govuk-notification-banner govuk-!-margin-0" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+                  <div class="govuk-notification-banner__header">
+                    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                      Important
+                    </h2>
+                  </div>
+                  <div class="govuk-notification-banner__content">
+                    <p class="govuk-notification-banner__heading-sm">
+                      Follow this guidance to improve accessibility.
+                    </p>
+                  </div>
+                </div>
+                <h1 class="govuk-!-margin-0 govuk-!-margin-top-2 govuk-!-margin-bottom-0">Heading</h1>
+                <p>Highest priority content should be placed higher on the page.</p>
+
+                <div>
+                <h2 class="govuk-!-margin-0">Sub heading</h2>
+                <ul class="govuk-!-margin-0">
+                  <li>Item one</li>
+                  <li>Item two</li>
+                  <li>Item three</li>
+                </ul>
+                </div>
+                <div>
+                  <button class="govuk-button " data-module="govuk-button">
+                    Continue
+                  </button>
+                </div>
+                <div>The <a href="https://www.gov.uk/service-manual/service-standard" class="govuk-link">GOV.UK Service Standard</a> has more information about creating accessible user centred content.</div>
+                
+              </div>
+              <div class="footer"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
