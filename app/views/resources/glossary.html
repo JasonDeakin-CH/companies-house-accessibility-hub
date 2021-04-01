@@ -1,0 +1,337 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Glossary
+      </h1>
+      {% from "govuk/components/accordion/macro.njk" import govukAccordion %}
+
+{{ govukAccordion({
+  id: "accordion-default",
+  items: [
+    {
+      heading: {
+        text: "A"
+      },
+      content: {
+        html: "<div>
+                <p class='govuk-link govuk-!-font-weight-bold'>annual return</p>
+                <p class='govuk-body'>Lower case. Now known as a confirmation statement.</p>
+              </div>
+              <div>
+                <p class='govuk-link govuk-!-font-weight-bold'>authentication code</p>
+                <p class='govuk-body'>Lower case.</p>
+              </div>"
+      }
+    },
+    {
+      heading: {
+        text: "B"
+      },
+      content: {
+        html: "<div>
+                <p class='govuk-link govuk-!-font-weight-bold'>beneficial owner</p>
+                <p class='govuk-body'>Lower case.</p>
+              </div>"
+      }
+    },
+      {
+      heading: {
+        text: "C"
+      },
+      content: {
+        html: "<div>
+                <p class='govuk-link govuk-!-font-weight-bold'>Companies House account</p>
+                <p class='govuk-body'>Lower case for 'account'.</p>
+              </div>
+              <div>
+                <p class='govuk-link govuk-!-font-weight-bold'>Companies House register</p>
+                <p class='govuk-body'>Lower case for 'register'.</p>
+              </div>
+              <div>
+                <p class='govuk-link govuk-!-font-weight-bold'>Companies House service</p>
+                <p class='govuk-body'>Service should be lower case.</p>
+              </div>
+              <div>
+                <p class='govuk-link govuk-!-font-weight-bold'>confirmation statement</p>
+                <p class='govuk-body'>Lower case.</p>
+              </div>"
+      }
+    },
+      {
+      heading: {
+        text: "D"
+      },
+      content: {
+        html: "<div>
+                <p class='govuk-link govuk-!-font-weight-bold'>director</p>
+                <p class='govuk-body'>Lower case.</p>
+              </div>"
+      }
+    },
+        {
+      heading: {
+        text: "E"
+      },
+      content: {
+        html: "<div>
+                <p class='govuk-link govuk-!-font-weight-bold'>European Economic Interest Grouping</p>
+                <p class='govuk-body'>Upper case. Abbreviated to EEIG.</p>
+              </div>"
+      }
+    },
+    {
+      heading: {
+        text: "F"
+      },
+      content: {
+        html: ""
+      }
+    },
+      {
+      heading: {
+        text: "G"
+      },
+      content: {
+        html: "<div>
+                <p class='govuk-link govuk-!-font-weight-bold'>The Gazette</p>
+                <p class='govuk-body'>Upper case.</p>
+              </div>"
+      }
+    },
+      {
+      heading: {
+        text: "H"
+      },
+      content: {
+        html: ""
+      }
+    },
+        {
+      heading: {
+        text: "I"
+      },
+      content: {
+        html: "<div>
+                <p class='govuk-link govuk-!-font-weight-bold'>Insolvenct practictioner</p>
+                <p class='govuk-body'>Upper case.</p>
+              </div>
+              <div>
+                <p class='govuk-link govuk-!-font-weight-bold'>the Insolvency Service</p>
+                <p class='govuk-body'>Upper case for 'Insolvency Service'</p>
+              </div>
+              <div>
+                <p class='govuk-link govuk-!-font-weight-bold'>interested parties</p>
+                <p class='govuk-body'>Lower case.</p>
+              </div>"
+      }
+    },
+    {
+      heading: {
+        text: "J"
+      },
+      content: {
+        html: ""
+      }
+    },
+      {
+      heading: {
+        text: "K"
+      },
+      content: {
+        html: ""
+      }
+    },
+      {
+      heading: {
+        text: "L"
+      },
+      content: {
+        html: "<div>
+                <p class='govuk-link govuk-!-font-weight-bold'>limited liability partnership</p>
+                <p class='govuk-body'>Lower case. Abbreviated to LLP.</p>
+              </div>"
+      }
+    },
+        {
+      heading: {
+        text: "M"
+      },
+      content: {
+        html: "<div>
+                <p class='govuk-link govuk-!-font-weight-bold'>member</p>
+                <p class='govuk-body'>Upper case.</p>
+              </div>"
+      }
+    },
+    {
+      heading: {
+        text: "N"
+      },
+      content: {
+        html: ""
+      }
+    },
+      {
+      heading: {
+        text: "O"
+      },
+      content: {
+        html: ""
+      }
+    },
+      {
+      heading: {
+        text: "P"
+      },
+      content: {
+        html: "<div>
+                <p class='govuk-link govuk-!-font-weight-bold'>people with significant control</p>
+                <p class='govuk-body'>Lower case. Abbreviated to PSCs</p>
+              </div>
+              <div>
+                <p class='govuk-link govuk-!-font-weight-bold'>people with significant control register</p>
+                <p class='govuk-body'>Lower case. Abbreviated to PSC register.</p>
+              </div>
+              <div>
+                <p class='govuk-link govuk-!-font-weight-bold'>person with signifcant control</p>
+                <p class='govuk-body'>Lower case. Abbreviated to PSC.</p>
+              </div>
+              <div>
+                <p class='govuk-link govuk-!-font-weight-bold'>private companies</p>
+                <p class='govuk-body'>Lower case.</p>
+              </div>
+              <div>
+                <p class='govuk-link govuk-!-font-weight-bold'>public companies</p>
+                <p class='govuk-body'>Lower case.</p>
+              </div>"
+      }
+    },
+        {
+      heading: {
+        text: "Q"
+      },
+      content: {
+        html: ""
+      }
+    },
+    {
+      heading: {
+        text: "R"
+      },
+      content: {
+        html: "<div>
+                <p class='govuk-link govuk-!-font-weight-bold'>register</p>
+                <p class='govuk-body'>Lower case.</p>
+              </div>
+              <div>
+                <p class='govuk-link govuk-!-font-weight-bold'>registrar</p>
+                <p class='govuk-body'>Lower case.</p>
+              </div>
+              <div>
+                <p class='govuk-link govuk-!-font-weight-bold'>relevant legal entity</p>
+                <p class='govuk-body'>Lower case. Abbreviated to RLE.</p>
+              </div>"
+      }
+    },
+      {
+      heading: {
+        text: "S"
+      },
+      content: {
+        html: "<div>
+                <p class='govuk-link govuk-!-font-weight-bold'>SAIL address</p>
+                <p class='govuk-body'>Single Alternative Inspection Location.</p>
+              </div>
+              <div>
+                <p class='govuk-link govuk-!-font-weight-bold'>shareholder</p>
+                <p class='govuk-body'>Lower case.</p>
+              </div>
+              <div>
+                <p class='govuk-link govuk-!-font-weight-bold'>Scottish limited partnership</p>
+                <p class='govuk-body'>Upper case for 'Scottish'. Abbreviated to SLP.</p>
+              </div>
+              <div>
+                <p class='govuk-link govuk-!-font-weight-bold'>Scottish qualifying partnership</p>
+                <p class='govuk-body'>Upper case for 'Scottish'. Abbreviated to SQP.</p>
+              </div>
+              <div>
+                <p class='govuk-link govuk-!-font-weight-bold'>Societas Europaea</p>
+                <p class='govuk-body'>Upper case. Abbreviated to SE.</p>
+              </div>
+              <div>
+                <p class='govuk-link govuk-!-font-weight-bold'>strike off</p>
+                <p class='govuk-body'>Always two separate words, never hyphenated. Examples: To strike off a company. Strike off action. This company has been struck off.</p>
+              </div>"
+      }
+    },
+      {
+      heading: {
+        text: "T"
+      },
+      content: {
+        html: ""
+      }
+    },
+        {
+      heading: {
+        text: "U"
+      },
+      content: {
+        html: ""
+      }
+    },
+    {
+      heading: {
+        text: "V"
+      },
+      content: {
+        html: ""
+      }
+    },
+      {
+      heading: {
+        text: "W"
+      },
+      content: {
+        html: "<div>
+                <p class='govuk-link govuk-!-font-weight-bold'>WebCHeck</p>
+                <p class='govuk-body'>All one word. Capital letter for W, C and H.</p>
+              </div>
+              <div>
+                <p class='govuk-link govuk-!-font-weight-bold'>WebFiling</p>
+                <p class='govuk-body'>All one word. Capital letter for W and F.</p>
+              </div>"
+      }
+    },
+      {
+      heading: {
+        text: "X"
+      },
+      content: {
+        html: ""
+      }
+    },
+        {
+      heading: {
+        text: "Y"
+      },
+      content: {
+        html: ""
+      }
+    },
+    {
+      heading: {
+        text: "Z"
+      },
+      content: {
+        html: ""
+      }
+    }
+  ]
+}) }}
+    </div>
+</div>
+{% endblock %}
