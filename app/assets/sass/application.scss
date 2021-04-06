@@ -135,3 +135,9 @@ ol {
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
+
+.foobar {
+  display: flex;
+  flex-direction: row
+}
+.foo:hover + .bar { background: red}
