@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Blog posts
+      </h1>
+      <div>
+        <ul class="blog-posts-container">
+          <li class="govuk-heading-m blog-post"><a href="https://companieshouse.blog.gov.uk/2020/12/15/in-conversation-with-the-digital-accessibility-centre/">In conversation with: the Digital Accessibility Centre</a></li>
+          <li class="govuk-heading-m blog-post"><a href="https://companieshouse.blog.gov.uk/2020/12/04/meeting-government-accessibility-regulations/">Meeting government accessibility regulations</a></li>
+          <li class="govuk-heading-m blog-post"><a href="https://companieshouse.blog.gov.uk/2020/10/08/working-in-companies-house-as-a-person-with-a-disability/">Working in Companies House as a person with a disability</a></li>
+          <li class="govuk-heading-m blog-post"><a href="https://companieshouse.blog.gov.uk/2020/03/17/user-research-panel-help-us-to-help-you/">User research panel: help us to help you</a></li>
+          <li class="govuk-heading-m blog-post"><a href="https://companieshouse.blog.gov.uk/2020/03/11/raising-awareness-of-accessible-design/">Raising awareness of accessible design</a></li>
+        </ul>
+      </div>
+      <nav role="navigation" aria-label="Pagination">
+        <div class="pagination__summary">Showing 6 - 10 of 20 results</div>
+        <ul class="pagination">
+          <li class="pagination__item"><a class="pagination__link" href="/index" aria-label="Previous page"><span aria-hidden="true" role="presentation">&laquo;</span> Previous</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="1" aria-label="Page 1">1</a></li>
+          <li class="pagination__item"><a class="pagination__link current" href="blogs/" aria-label="Page 2">2</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="3" aria-label="Page 3">3</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="4" aria-label="Page 4">4</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="blogs/3" aria-label="Next page">Next <span aria-hidden="true" role="presentation">&raquo;</span></a></li>
+        </ul>
+      </nav>
+    </div>
+</div>
+{% endblock %}
