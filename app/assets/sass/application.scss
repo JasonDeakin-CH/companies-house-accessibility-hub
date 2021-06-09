@@ -136,8 +136,9 @@ ol {
   border-right: 1px solid black;
 }
 
-.foobar {
-  display: flex;
-  flex-direction: row
+ul .blog-posts-container {
+  margin-left: 0px;
 }
-.foo:hover + .bar { background: red}
+.blog-post {
+  border-bottom: 1px solid black;
+}
