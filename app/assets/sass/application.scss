@@ -220,3 +220,17 @@ ul.blog-posts-container {
     float: right;
   }
 }
+
+ul.unordered-list {
+  list-style-type: none;
+  padding-inline-start: 0px;
+  li:first-child {
+    border-top: 1px solid #b1b4b6;
+  }
+  li {
+    border-bottom: 1px solid #b1b4b6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
